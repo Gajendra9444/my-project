@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><image src="images/logo.png.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="">HOME</a>
+                            <a href="">ABOUT</a> 
+                            <a href="">COURSE</a>
+                            <a href="">BLOG</a>
+                            <a href="">CONTACT</a> 
+                        </li>
+                    </ul>
+                   
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Welcome TO Nagarjun </h1>
+            <p>Nagarjun is hear to help and teach you anytime. We have different crash courses availabel at our coaching center.<br> Intrested students can visit us between 9am to 5pm. We are happy to serve you. Thank you!</p>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
+        </div>
+
+    </section>
+
+   <!-- javascript for toggle menu -->
+
+
+    <script>
+  let navLinks = document.getElementById("navLiks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+
+  }
+    </script>
+    
+</body>
+</html>
